@@ -12,17 +12,16 @@ import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 public class ModEvents {
     public static void onIncapable(PlayerEvent.BreakSpeed event) {
         Player entity = event.getEntity();
+        if (entity == null || entity instanceof FakePlayer || entity.isCreative()) {
+            return;
+        }
+
         Level level = entity.level();
         BlockState blockState = event.getState();
         ItemStack item = entity.getMainHandItem();
         float destroySpeed = blockState.getDestroySpeed(entity.level(), event.getPosition().get());
 
-        // Ensure the entity is a real player and not in creative mode
-        if (entity == null || entity instanceof FakePlayer || entity.isCreative()) {
-            return;
-        }
-
-        if (destroySpeed >= 1.5F) {
+        if (destroySpeed >= 1.25F) {
             boolean hasCorrectTool = item.isCorrectToolForDrops(blockState);
             boolean hasTool = item.has(DataComponents.TOOL);
             boolean hasDigAbility = item.canPerformAction(ItemAbilities.AXE_DIG) ||
