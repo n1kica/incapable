@@ -8,10 +8,10 @@ In this release, the core feature of Incapable Mod is now live: **Tool Dependenc
 
 - **Realistic Challenge:** Just like in real life, attempting to mine blocks with your bare hands will result in inefficiency and even damage. This mechanic aims to add a layer of realism and make your tool choices more strategic.
 
-### What’s Included in 1.0.0
+### What’s Included in 1.0.1
 
 - **Basic Tool Enforcement:** The mod will prevent block breaking unless the correct tool is equipped. This includes logs, ores, and other key block types.
-- **Damage Prevention:** Attempting to break blocks with incorrect tools (or no tools) will now cause minor damage to your character, reinforcing the need for proper equipment.
+- **Damage Prevention:** Attempting to break blocks with no tools will cause minor damage to your character, reinforcing the need for proper equipment.
 - **Simple Integration:** The mod integrates seamlessly with Minecraft, making it easy to get started without additional setup.
 
 ### Future Plans
