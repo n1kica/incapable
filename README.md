@@ -1,27 +1,23 @@
+Welcome to the first release of the Incapable Mod, version 1.0.0! This initial release introduces a fundamental gameplay mechanic designed to enhance your Minecraft experience by adding a touch of realism and challenge. Here’s what you need to know:
 
-Installation information
-=======
+### Core Mechanic: Tool Dependency
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions at [github](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+In this release, the core feature of Incapable Mod is now live: **Tool Dependency**. In the world of Minecraft, you’ll now find that breaking blocks is no longer a simple task. The mod enforces that:
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+- **Proper Tools Required:** You can no longer mine or break blocks unless you are using the appropriate tool for the job. Want to chop down trees? You’ll need an axe. Dig through stone? Grab a pickaxe. Your hands, unfortunately, are no longer sufficient for these tasks.
 
-> **Note**: For Eclipse, use tasks in `Launch Group` instead of ones founds in `Java Application`. A preparation task must run before launching the game. NeoGradle uses launch groups to do these subsequently.
+- **Realistic Challenge:** Just like in real life, attempting to mine blocks with your bare hands will result in inefficiency and even damage. This mechanic aims to add a layer of realism and make your tool choices more strategic.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+### What’s Included in 1.0.0
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+- **Basic Tool Enforcement:** The mod will prevent block breaking unless the correct tool is equipped. This includes logs, ores, and other key block types.
+- **Damage Prevention:** Attempting to break blocks with incorrect tools (or no tools) will now cause minor damage to your character, reinforcing the need for proper equipment.
+- **Simple Integration:** The mod integrates seamlessly with Minecraft, making it easy to get started without additional setup.
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+### Future Plans
+
+This is just the beginning for Incapable Mod. Future updates will expand upon this core mechanic with additional features and improvements based on player feedback and testing.
+
+We hope you enjoy this new challenge and find the added depth to gameplay both engaging and rewarding. Thank you for being part of the journey with Incapable Mod!
+
+**Stay tuned for future updates, and as always, happy mining (with the right tools)!**
