@@ -23,7 +23,7 @@ public class ModEvents {
 
         if (destroySpeed >= 1.25F) {
             boolean hasCorrectTool = item.isCorrectToolForDrops(blockState);
-            boolean hasTool = item.has(DataComponents.TOOL);
+            boolean emptyHand = item.isEmpty();
             boolean hasDigAbility = item.canPerformAction(ItemAbilities.AXE_DIG) ||
                                     item.canPerformAction(ItemAbilities.PICKAXE_DIG);
 
@@ -31,14 +31,14 @@ public class ModEvents {
                 if (hasCorrectTool) {
                     return;
                 }
-                if (!hasTool) {
+                if (emptyHand) {
                     entity.hurt(level.damageSources().generic(), 2);
                 }
             } else {
                 if (hasCorrectTool || hasDigAbility) {
                     return;
                 }
-                if (!hasTool) {
+                if (emptyHand) {
                     entity.hurt(level.damageSources().generic(), 1);
                 }
             }

@@ -13,10 +13,8 @@ import org.slf4j.LoggerFactory;
 public class Incapable
 {
     public static final String MOD_ID = "incapable";
-    public static final Logger logger = LoggerFactory.getLogger(Incapable.class);
 
     public Incapable(@NotNull IEventBus bus) {
-        // Register ourselves for server and other game events we are interested in
         NeoForge.EVENT_BUS.addListener(ModEvents::onIncapable);
     }
 }
