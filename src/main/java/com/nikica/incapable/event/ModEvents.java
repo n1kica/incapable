@@ -9,6 +9,8 @@ import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.neoforge.common.util.FakePlayer;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 
+import com.nikica.incapable.config.IncapableConfig;
+
 public class ModEvents {
     public static void onIncapable(PlayerEvent.BreakSpeed event) {
         Player entity = event.getEntity();
@@ -31,14 +33,14 @@ public class ModEvents {
                 if (hasCorrectTool) {
                     return;
                 }
-                if (emptyHand) {
+                if (emptyHand && IncapableConfig.damagePlayer.get()) {
                     entity.hurt(level.damageSources().generic(), 2);
                 }
             } else {
                 if (hasCorrectTool || hasDigAbility) {
                     return;
                 }
-                if (emptyHand) {
+                if (emptyHand && IncapableConfig.damagePlayer.get()) {
                     entity.hurt(level.damageSources().generic(), 1);
                 }
             }
