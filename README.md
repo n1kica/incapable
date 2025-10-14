@@ -1,9 +1,15 @@
-# Incapable Mod – Overview
+# INCAPABLE MOD
 
-This mod revamps a core mechanic: **you can’t break blocks without the correct tool.**
+Revamps block-breaking mechanic by enforcing proper tool use.
 
-- **Tool Enforcement:** Axes for logs, pickaxes for stone and ores—hands don’t work.
-- **Configurable Damage:** Trying without a tool deals minor damage, adjustable in the config.
-- **Seamless Integration:** No extra setup required.
+## MECHANIC
+Blocks like logs, stone, and ores require the correct tool. Soft materials (grass, sand, dirt, etc.) can still be broken by hand.
 
-More features will come in future updates.
+## DAMAGE
+Attempting to break restricted blocks without a tool inflicts minor, configurable damage.
+
+## INTEGRATION
+Works out of the box with no extra setup.
+
+## FUTURE
+Planned expansions will build on this system.
