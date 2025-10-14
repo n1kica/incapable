@@ -20,7 +20,7 @@ public class ModEvents {
         Level level = entity.level();
         BlockState blockState = event.getState();
         ItemStack item = entity.getMainHandItem();
-        float destroySpeed = blockState.getDestroySpeed(entity.level(), event.getPosition().get());
+        float destroySpeed = blockState.getDestroySpeed(level, event.getPosition().get());
 
         if (destroySpeed >= 1.25F) {
             boolean hasCorrectTool = item.isCorrectToolForDrops(blockState);
