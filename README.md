@@ -1,14 +1,14 @@
-# INCAPABLE MOD
+# Incapable Mod
 
 Revamps block-breaking by enforcing proper tool use.
 
-## MECHANIC
+## Mechanic
 Blocks such as logs, stone, and ores require the correct tool. Materials like grass, sand, and dirt can still be broken by hand.
 
-## DAMAGE
+## Damage
 Attempting to break restricted blocks without a tool inflicts minor damage.
 
-## CONFIG
+## Config
 Works out of the box with no extra setup.
 ```toml
 [damage]
@@ -18,5 +18,5 @@ Works out of the box with no extra setup.
 	damage_player = 1.0
 ```
 
-## FUTURE
+## Future
 Planned expansions will build on this system.
