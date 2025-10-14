@@ -1,6 +1,6 @@
 package com.nikica.incapable.event;
 
-import net.minecraft.core.component.DataComponents;
+import com.nikica.incapable.IncapableConfig;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -9,7 +9,6 @@ import net.neoforged.neoforge.common.ItemAbilities;
 import net.neoforged.neoforge.common.util.FakePlayer;
 import net.neoforged.neoforge.event.entity.player.PlayerEvent;
 
-import com.nikica.incapable.config.IncapableConfig;
 
 public class ModEvents {
     public static void onIncapable(PlayerEvent.BreakSpeed event) {
@@ -33,15 +32,15 @@ public class ModEvents {
                 if (hasCorrectTool) {
                     return;
                 }
-                if (emptyHand && IncapableConfig.damagePlayer.get()) {
-                    entity.hurt(level.damageSources().generic(), 2);
+                if (emptyHand) {
+                    entity.hurt(level.damageSources().generic(), IncapableConfig.CONFIG.damagePlayer.get().floatValue() * 2);
                 }
             } else {
                 if (hasCorrectTool || hasDigAbility) {
                     return;
                 }
-                if (emptyHand && IncapableConfig.damagePlayer.get()) {
-                    entity.hurt(level.damageSources().generic(), 1);
+                if (emptyHand) {
+                    entity.hurt(level.damageSources().generic(), (float)IncapableConfig.CONFIG.damagePlayer.get().floatValue());
                 }
             }
 
