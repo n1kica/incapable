@@ -1,6 +1,6 @@
 # Incapable Mod
 
-Revamps block-breaking by enforcing proper tool use.
+Revamps block-breaking mechanic by enforcing proper tool use.
 
 ## Mechanic
 Blocks such as logs, stone, and ores require the correct tool. Materials like grass, sand, and dirt can still be broken by hand.
