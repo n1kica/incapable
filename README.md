@@ -9,7 +9,7 @@ Blocks such as logs, stone, and ores require the correct tool. Materials like gr
 Attempting to break restricted blocks without a tool inflicts minor damage.
 
 ## Config
-Works out of the box with no extra setup.
+Works out of the box with no extra setup, but can be configured:
 ```toml
 [damage]
 	# Amount of damage taken when unequipped
