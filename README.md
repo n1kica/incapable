@@ -20,4 +20,4 @@ Works out of the box. Optional tuning via config:
 ```
 
 ## Roadmap
-Future updates might expand on the system and add new interactions.
+Future updates could expand on the system and add new interactions.
