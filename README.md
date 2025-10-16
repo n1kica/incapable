@@ -1,15 +1,16 @@
 # Incapable Mod
 
-Revamps block-breaking mechanic by enforcing proper tool use.
+Revamps block-breaking by enforcing proper tool use.
 
-## Mechanic
-Blocks such as logs, stone, and ores require the correct tool. Materials like grass, sand, and dirt can still be broken by hand.
+## Core Mechanic
+- Certain blocks (logs, stone, ores) **require the correct tool**.
+- Soft materials (grass, sand, dirt) remain **breakable by hand**.
 
-## Damage
-Attempting to break restricted blocks without a tool inflicts minor damage.
+## Penalty
+- Breaking restricted blocks without a tool **inflicts minor damage** to the player.
 
-## Config
-Works out of the box with no extra setup, but can be configured:
+## Configuration
+Works out of the box. Optional tuning via config:
 ```toml
 [damage]
 	# Amount of damage taken when unequipped
@@ -18,5 +19,5 @@ Works out of the box with no extra setup, but can be configured:
 	damage_player = 1.0
 ```
 
-## Future
-Planned expansions will build on this system.
+## Roadmap
+Future updates will expand the system and add new interactions.
