@@ -40,7 +40,7 @@ public class ModEvents {
                     return;
                 }
                 if (emptyHand) {
-                    entity.hurt(level.damageSources().generic(), (float)IncapableConfig.CONFIG.damagePlayer.get().floatValue());
+                    entity.hurt(level.damageSources().generic(), IncapableConfig.CONFIG.damagePlayer.get().floatValue());
                 }
             }
 
